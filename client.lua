@@ -21,7 +21,7 @@ CreateThread(function()
         if IsPlayerInVehicle(player) then
             local currentWeapon = GetSelectedPedWeapon(player)
 
-            if currentWeapon ~= nil and IsControlJustReleased(0, 24) then -- 24, sol fare tuşu, değişebilirsiniz
+            if currentWeapon ~= nil and IsControlJustReleased(0, 24) then -- 24 right mouse
                 local weaponHash = GetHashKey(currentWeapon)
 
                 for _, blacklistedWeapon in pairs(blacklist) do
