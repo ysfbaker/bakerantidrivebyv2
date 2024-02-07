@@ -14,7 +14,7 @@ end
 
 CreateThread(function()
     while true do
-        Wait(0)
+        Wait(100)
 
         local player = PlayerId()
 
