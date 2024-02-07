@@ -12,9 +12,9 @@ function IsPlayerInVehicle(player)
     end
 end
 
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do
-        Citizen.Wait(0)
+        Wait(0)
 
         local player = PlayerId()
 
